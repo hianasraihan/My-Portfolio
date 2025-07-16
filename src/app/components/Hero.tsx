@@ -54,7 +54,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6"
         >
-          Hello, I'm <span className="text-blue-400">Anas Raihan Aprianto</span>
+          Hello, Im <span className="text-blue-400">Anas Raihan Aprianto</span>
         </motion.h1>
 
         <motion.p

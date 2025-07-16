@@ -51,7 +51,7 @@ export default function Projects() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="mb-10 text-slate-400"
       >
-       Here are some cool projects I've worked on.
+       Here are some cool projects Ive worked on.
       </motion.p>
 
       {/* Grid Project Cards */}
