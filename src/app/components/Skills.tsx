@@ -1,0 +1,189 @@
+"use client";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { FaEye } from "react-icons/fa";
+
+const skills = [
+  { name: "React", image: "/react.jpg" },
+  { name: "Next.js", image: "/nextjs.jpg" },
+  { name: "Tailwind CSS", image: "/tailwind.jpg" },
+  { name: "Vite.js", image: "/vite.jpg" },
+  { name: "JavaScript", image: "/js.jpg" },
+  { name: "TypeScript", image: "/ts.jpg" },
+  
+];
+
+const certifications = [
+  {
+    title: "Full Stack Web Development",
+    issuer: "Binar Academy",
+    image: "/Sertifikat2.jpg",
+  },
+  {
+    title: "Participant - BRAND’S LAB: A Recipe For Brand Distinction",
+    issuer: "OWL Club - Universitas Prasetiya Mulya",
+    image: "/Sertifikat1.jpg",
+  },
+];
+
+const education = [
+  {
+    degree: "Full Stack Web Development",
+    school: "Purwadhika Digital School",
+    year: "Febuary 2025 - July 2025",
+  },
+];
+
+export default function SkillsSection() {
+  const [activeTab, setActiveTab] = useState("Skills");
+  const [selectedCert, setSelectedCert] = useState<string | null>(null);
+
+  return (
+    <section
+      id="Skills"
+      className="py-20 px-4 bg-slate-900 text-slate-300 text-center"
+    >
+      {/* Judul */}
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-3xl sm:text-4xl font-semibold text-blue-400 mb-6"
+      >
+        {activeTab}
+      </motion.h2>
+
+      {/* Tab Navigation */}
+      <div className="flex justify-center space-x-4 mb-10">
+        {["Skills", "Education", "Certifications"].map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+              activeTab === tab
+                ? "bg-sky-500 text-slate-900"
+                : "bg-slate-700 hover:bg-slate-600 text-sky-300"
+            }`}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      {/* Skills */}
+      {activeTab === "Skills" && (
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 max-w-6xl mx-auto">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="flex flex-col items-center"
+            >
+              <div className="w-16 h-16 sm:w-20 sm:h-20 mb-2 rounded-xl bg-slate-100 flex items-center justify-center shadow-md">
+                <img
+                  src={skill.image}
+                  alt={skill.name}
+                  className="w-8 sm:w-10 h-auto"
+                />
+              </div>
+              <span className="text-sm text-blue-400">{skill.name}</span>
+            </motion.div>
+          ))}
+        </div>
+      )}
+
+      {/* Education */}
+      {activeTab === "Education" && (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6 max-w-2xl mx-auto"
+        >
+          {education.map((edu, i) => (
+            <div
+              key={i}
+              className="bg-slate-800 p-4 rounded-xl shadow-md text-left"
+            >
+              <h3 className="text-lg font-semibold text-blue-400">
+                {edu.degree}
+              </h3>
+              <p className="text-sm">{edu.school}</p>
+              <p className="text-xs text-slate-400">{edu.year}</p>
+            </div>
+          ))}
+        </motion.div>
+      )}
+
+      {/* Certifications */}
+      {activeTab === "Certifications" && (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto"
+        >
+          {certifications.map((cert, i) => (
+            <motion.div
+              key={i}
+              whileHover={{ y: -6 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="bg-slate-800 rounded-xl overflow-hidden shadow-md text-left group"
+            >
+              {/* Gambar Sertifikat */}
+              <div className="relative">
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-40 object-cover transition duration-300 lg:group-hover:blur-sm"
+                />
+
+                {/* Klik sertifikat untuk mobile/tablet */}
+                <button
+                  onClick={() => setSelectedCert(cert.image)}
+                  className="block lg:hidden absolute inset-0"
+                  aria-label="Open certificate"
+                />
+
+                {/* Ikon mata dan blur hanya saat hover di desktop */}
+                <button
+                  onClick={() => setSelectedCert(cert.image)}
+                  className="absolute inset-0 hidden lg:flex items-center justify-center transition duration-300 bg-transparent lg:group-hover:bg-black/40"
+                >
+                  <FaEye className="text-white text-xl opacity-0 lg:group-hover:opacity-100 transition" />
+                </button>
+              </div>
+
+              <div className="p-4">
+                <h4 className="text-md font-semibold text-blue-400">
+                  {cert.title}
+                </h4>
+                <p className="text-sm text-slate-400">{cert.issuer}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
+
+      {/* Modal */}
+      {selectedCert && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm"
+          onClick={() => setSelectedCert(null)}
+        >
+          <div className="max-w-3xl w-full p-4">
+            <img
+              src={selectedCert}
+              alt="Certificate Preview"
+              className="w-full h-auto rounded-xl shadow-xl"
+            />
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
