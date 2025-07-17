@@ -18,12 +18,21 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20 bg-slate-900 text-slate-300 overflow-hidden"
     >
       {/* Foto Profil dengan efek gradasi berputar dan aura */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="relative group w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full overflow-visible"
-      >
+<motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+  className="relative group overflow-visible
+             w-40 h-40
+             sm:w-52 sm:h-52
+             md:w-60 md:h-60
+             lg:w-[288px] lg:h-[350px] 
+             rounded-full 
+             lg:rounded-[120px/100px]"
+>
+
+
+
         {/* Efek Gradasi Muter */}
         <div className="absolute inset-0 z-0 rounded-full animate-spin-slow">
           <div className="w-full h-full rounded-full bg-[conic-gradient(at_top_left,_#60a5fa,_#3b82f6,_#60a5fa,_#60a5fa)] blur-sm brightness-150 saturate-200 opacity-100 shadow-[0_0_50px_#60a5fa]" />
@@ -54,7 +63,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6"
         >
-          Hello, Im <span className="text-blue-400">Anas Raihan Aprianto</span>
+          <span className="text-blue-400">Anas Raihan Aprianto</span>
         </motion.h1>
 
         <motion.p

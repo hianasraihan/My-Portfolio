@@ -27,13 +27,13 @@ export default function About() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="max-w-3xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed mb-10"
       >
-        Hey there! I’m a <strong className="text-blue-400">Frontend Developer</strong> who loves building clean, modern websites that not only look good but are super easy to use. I usually work with{" "}
+        Hey there! I'm a <strong className="text-blue-400">Frontend Developer</strong> who loves building clean, modern websites that not only look good but are super easy to use. I usually work with{" "}
         <strong className="text-blue-400">React</strong>,{" "}
         <strong className="text-blue-400">Next.js</strong>,{" "}
         <strong className="text-blue-400">TypeScript</strong>, and{" "}
         <strong className="text-blue-400">Tailwind CSS</strong> — basically the stuff that helps me make fast and responsive sites that work great on any screen.
         <br /><br />
-        Im really into adding little animations and smooth interactions to make things feel more fun and alive. Im all about good <strong className="text-blue-400">user experience</strong>, so I try to make everything simple, fast, and accessible for everyone.
+        I'm really into adding little animations and smooth interactions to make things feel more fun and alive. I'm all about good <strong className="text-blue-400">user experience</strong>, so I try to make everything simple, fast, and accessible for everyone.
         <br /><br />
         Whether its a cool landing page or a full web app, I just enjoy turning ideas into something people can actually click around and enjoy.
       </motion.p>
@@ -45,7 +45,7 @@ export default function About() {
         className="flex justify-center gap-4 flex-wrap"
       >
         <a
-          href="/cv-hiana.pdf"
+          href="/Anas-Raihan-Aprianto-CV.pdf"
           download
           className="inline-flex items-center gap-2 px-6 py-3 bg-sky-500 hover:bg-sky-400 text-slate-900 font-medium rounded-full shadow-lg transition-all text-sm sm:text-base"
         >
@@ -88,7 +88,7 @@ export default function About() {
 
               <div className="w-full aspect-[9/16] relative rounded-md overflow-hidden">
                 <Image
-                  src="/cv-preview.jpg"
+                  src="/AnasRaihanApriantoCV.png"
                   alt="CV Preview"
                   fill
                   className="object-contain"

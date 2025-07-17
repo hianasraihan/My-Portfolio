@@ -10,6 +10,12 @@ const skills = [
   { name: "Vite.js", image: "/vite.jpg" },
   { name: "JavaScript", image: "/js.jpg" },
   { name: "TypeScript", image: "/ts.jpg" },
+  { name: "Html", image: "/html.jpg" },
+  { name: "Css", image: "/css.jpg" },
+  { name: "Github", image: "/github.jpg" },
+  { name: "Python", image: "/python.jpg" },
+  { name: "Node.js", image: "/nodejs.jpg" },
+  { name: "Vercel", image: "/vercel.jpg" },
   
 ];
 
