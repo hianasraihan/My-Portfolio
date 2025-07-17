@@ -26,7 +26,7 @@ export default function Hero() {
              w-40 h-40
              sm:w-52 sm:h-52
              md:w-60 md:h-60
-             lg:w-[288px] lg:h-[350px] 
+             lg:w-[288px] lg:h-[340px] 
              rounded-full 
              lg:rounded-[120px/100px]"
 >
