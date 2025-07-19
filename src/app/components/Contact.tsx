@@ -69,6 +69,29 @@ export default function Contact() {
     }
   };
 
+  // Animasi Variants
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring" as const, // ✅ Fix untuk TypeScript
+        stiffness: 500,
+        damping: 20,
+      },
+    },
+  };
+
   return (
     <section id="Contact" className="py-20 px-4 bg-slate-900 text-slate-800">
       <motion.h2
@@ -81,23 +104,21 @@ export default function Contact() {
       </motion.h2>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-        {/* KIRI: Sosial Media */}
-        <div className="space-y-4">
-          {icons.map((item, i) => (
+        {/* KIRI: Sosial Media dengan animasi smooth */}
+        <motion.div
+          className="space-y-4"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {icons.map((item) => (
             <motion.a
               key={item.label}
+              variants={itemVariants}
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                delay: i * 0.4,
-                type: "spring",
-                stiffness: 600,
-                damping: 9,
-              }}
               className="flex items-center p-4 bg-slate-800 text-sky-500 border rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
             >
               <div
@@ -112,7 +133,7 @@ export default function Contact() {
               </div>
             </motion.a>
           ))}
-        </div>
+        </motion.div>
 
         {/* KANAN: Form */}
         <motion.form
@@ -122,7 +143,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{
             delay: 0.4,
-            type: "spring",
+            type: "spring" as const,
             stiffness: 60,
             damping: 12,
           }}

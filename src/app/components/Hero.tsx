@@ -26,7 +26,7 @@ export default function Hero() {
              w-40 h-40
              sm:w-52 sm:h-52
              md:w-60 md:h-60
-             lg:w-[288px] lg:h-[340px] 
+             lg:w-[268px] lg:h-[370px] 
              rounded-full 
              lg:rounded-[120px/100px]"
 >
@@ -46,7 +46,7 @@ export default function Hero() {
         {/* Foto Profil */}
         <div className="relative z-10 w-full h-full rounded-full overflow-hidden bg-slate-900 border border-blue-400/40 shadow-[0_0_15px_#60a5fa]">
           <Image
-            src="/pp.jpg"
+            src="/Photo.jpg"
             alt="Foto Profil"
             width={300}
             height={300}

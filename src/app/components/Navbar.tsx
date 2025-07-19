@@ -28,7 +28,7 @@ export default function Navbar() {
       if (section) {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    }, 100); // Delay agar tidak tabrakan dengan animasi menu tutup
+    }, 250); // Delay agar tidak tabrakan dengan animasi menu tutup
   };
 
   // Cegah scroll body saat menu mobile terbuka
@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="text-blue-400 font-semibold text-lg flex items-center gap-2">
           <span className="text-xl">&lt;/&gt;</span>
-          <span className="whitespace-nowrap text-base sm:text-lg md:text-xl">
+          <span className="whitespace-nowrap text-base italic sm:text-lg md:text-xl">
             My Portfolio
           </span>
         </div>
