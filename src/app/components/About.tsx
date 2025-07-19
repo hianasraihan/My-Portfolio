@@ -88,7 +88,7 @@ export default function About() {
 
               <div className="w-full aspect-[9/16] relative rounded-md overflow-hidden">
                 <Image
-                  src="/AnasRaihanApriantoCV.png"
+                  src="/AnasRaihanApriantoCV.jpg"
                   alt="CV Preview"
                   fill
                   className="object-contain"
