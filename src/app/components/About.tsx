@@ -27,15 +27,15 @@ export default function About() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="max-w-3xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed mb-10"
       >
-        Hey there! I'm a <strong className="text-blue-400">Frontend Developer</strong> who loves building clean, modern websites that not only look good but are super easy to use. I usually work with{" "}
+        Hey there! Im a <strong className="text-blue-400">Frontend Developer</strong> who loves building clean, modern websites that not only look good but are super easy to use. I usually work with{" "}
         <strong className="text-blue-400">React</strong>,{" "}
         <strong className="text-blue-400">Next.js</strong>,{" "}
         <strong className="text-blue-400">TypeScript</strong>, and{" "}
         <strong className="text-blue-400">Tailwind CSS</strong> — basically the stuff that helps me make fast and responsive sites that work great on any screen.
         <br /><br />
-        I'm really into adding little animations and smooth interactions to make things feel more fun and alive. I'm all about good <strong className="text-blue-400">user experience</strong>, so I try to make everything simple, fast, and accessible for everyone.
+        Im really into adding little animations and smooth interactions to make things feel more fun and alive. Im all about good <strong className="text-blue-400">user experience</strong>, so I try to make everything simple, fast, and accessible for everyone.
         <br /><br />
-        Whether it's a cool landing page or a full web app, I just enjoy turning ideas into something people can actually click around and enjoy.
+        Whether its a cool landing page or a full web app, I just enjoy turning ideas into something people can actually click around and enjoy.
       </motion.p>
 
       <motion.div
