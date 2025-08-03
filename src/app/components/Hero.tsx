@@ -13,10 +13,12 @@ export default function Hero() {
   };
 
   return (
+    
     <section
       id="Home"
       className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20 bg-slate-900 text-slate-300 overflow-hidden"
     >
+    
       {/* Foto Profil dengan efek gradasi berputar dan aura */}
 <motion.div
   initial={{ opacity: 0, scale: 0.8 }}

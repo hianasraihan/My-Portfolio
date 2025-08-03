@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import RunningText from "./components/RunningText";
 
+
+
+
 export default function Home() {
   return (
     <main className="bg-white text-black dark:bg-black dark:text-white transition-all duration-300">
