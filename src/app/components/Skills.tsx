@@ -21,7 +21,7 @@ const skills = [
 
 const certifications = [
   {
-    title: "Full Stack Web Development",
+    title: "Full-Stack Web Development",
     issuer: "Binar Academy",
     image: "/Sertifikat2.jpg",
   },
@@ -30,6 +30,11 @@ const certifications = [
     issuer: "OWL Club - Universitas Prasetiya Mulya",
     image: "/Sertifikat1.jpg",
   },
+  {
+    title: "Full-Stack Web Development",
+    issuer: "Purwadhika Digital School",
+    image: "/Sertifikat3.jpg",
+  }
 ];
 
 const education = [
