@@ -23,7 +23,7 @@ export default function RunningText() {
   const combinedItems = [...items, ...items]; // 2x agar loop seamless
 
   return (
-    <div className="overflow-hidden bg-sky-400 text-white py-2 w-full">
+    <div className="overflow-hidden bg-green-600 text-white py-2 w-full">
       <motion.div
         className={`flex gap-8 whitespace-nowrap text-xl font-semibold w-max ${poppins.variable} font-poppins`}
         animate={{ x: ["0%", "-50%"] }}

@@ -85,7 +85,7 @@ export default function Contact() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring" as const, // ✅ Fix untuk TypeScript
+        type: "spring" as const, 
         stiffness: 500,
         damping: 20,
       },
@@ -93,12 +93,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="Contact" className="py-20 px-4 bg-slate-900 text-slate-800">
+    <section id="Contact" className="py-20 px-4 bg-white text-slate-800">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-3xl sm:text-4xl font-bold text-center text-blue-400 mb-10"
+        className="text-3xl sm:text-4xl font-bold text-center text-black mb-10"
       >
         Contact Me 
       </motion.h2>
@@ -119,7 +119,7 @@ export default function Contact() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center p-4 bg-slate-800 text-sky-500 border rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
+              className="flex items-center p-4 bg-white text-black border rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
             >
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center text-white mr-4"
@@ -147,10 +147,10 @@ export default function Contact() {
             stiffness: 60,
             damping: 12,
           }}
-          className="bg-slate-800 p-6 rounded-lg shadow-lg space-y-4 max-w-md"
+          className="bg-black p-6 rounded-lg shadow-lg space-y-4 max-w-md"
         >
           <div>
-            <label className="block text-sm text-slate-300 mb-1">Your Name</label>
+            <label className="block text-sm text-white mb-1">Your Name</label>
             <input
               type="text"
               name="name"
@@ -160,7 +160,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-sm text-slate-300 mb-1">Your Email</label>
+            <label className="block text-sm text-white mb-1">Your Email</label>
             <input
               type="email"
               name="email"
@@ -170,7 +170,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-sm text-slate-300 mb-1">Your Message</label>
+            <label className="block text-sm text-white mb-1">Your Message</label>
             <textarea
               name="message"
               rows={4}
@@ -181,7 +181,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="w-full bg-sky-500 text-white px-6 py-2 rounded hover:bg-green-600 transition"
+            className="w-full bg-green-600 text-white px-6 py-2 rounded transition"
             disabled={status === "loading"}
           >
             {status === "loading" ? "Sending..." : "Send ➤"}

@@ -34,10 +34,25 @@ const certifications = [
     title: "Full-Stack Web Development",
     issuer: "Purwadhika Digital School",
     image: "/Sertifikat3.jpg",
+  },
+  {
+    title: "AI-Enhanced Full Stack Developer",
+    issuer: "Hacktiv8",
+    image: "/Sertifikat4.jpg",
   }
 ];
 
 const education = [
+  {
+    degree: "Social Sciences",
+    school: "High School 18 Bekasi",
+    year: "May 2021 - May 2024",
+  },
+  {
+    degree: "AI-Enhanced Full Stack Developer",
+    school: "Hacktiv8",
+    year: "September 2024 - December 2024",
+  },
   {
     degree: "Full Stack Web Development",
     school: "Purwadhika Digital School",
@@ -52,14 +67,14 @@ export default function SkillsSection() {
   return (
     <section
       id="Skills"
-      className="py-20 px-4 bg-slate-900 text-slate-300 text-center"
+      className="py-20 px-4 bg-gray-100 text-slate-300 text-center"
     >
       {/* Judul */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-3xl sm:text-4xl font-semibold text-blue-400 mb-6"
+        className="text-3xl sm:text-4xl font-semibold text-black mb-6"
       >
         {activeTab}
       </motion.h2>
@@ -72,8 +87,8 @@ export default function SkillsSection() {
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition ${
               activeTab === tab
-                ? "bg-sky-500 text-slate-900"
-                : "bg-slate-700 hover:bg-slate-600 text-sky-300"
+                ? "bg-green-600 text-white"
+                : "bg-black hover:bg-slate-600 text-white"
             }`}
           >
             {tab}
@@ -101,7 +116,7 @@ export default function SkillsSection() {
                   className="w-8 sm:w-10 h-auto"
                 />
               </div>
-              <span className="text-sm text-blue-400">{skill.name}</span>
+              <span className="text-sm text-gray-700">{skill.name}</span>
             </motion.div>
           ))}
         </div>
@@ -118,13 +133,13 @@ export default function SkillsSection() {
           {education.map((edu, i) => (
             <div
               key={i}
-              className="bg-slate-800 p-4 rounded-xl shadow-md text-left"
+              className="bg-white p-4 rounded-xl shadow-md text-left"
             >
-              <h3 className="text-lg font-semibold text-blue-400">
+              <h3 className="text-lg font-semibold text-black">
                 {edu.degree}
               </h3>
-              <p className="text-sm">{edu.school}</p>
-              <p className="text-xs text-slate-400">{edu.year}</p>
+              <p className="text-sm text-gray-700">{edu.school}</p>
+              <p className="text-xs text-gray-700">{edu.year}</p>
             </div>
           ))}
         </motion.div>
@@ -143,7 +158,7 @@ export default function SkillsSection() {
               key={i}
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="bg-slate-800 rounded-xl overflow-hidden shadow-md text-left group"
+              className="bg-black rounded-xl overflow-hidden shadow-md text-left group"
             >
               {/* Gambar Sertifikat */}
               <div className="relative">
@@ -170,10 +185,10 @@ export default function SkillsSection() {
               </div>
 
               <div className="p-4">
-                <h4 className="text-md font-semibold text-blue-400">
+                <h4 className="text-md font-semibold text-white">
                   {cert.title}
                 </h4>
-                <p className="text-sm text-slate-400">{cert.issuer}</p>
+                <p className="text-sm text-white">{cert.issuer}</p>
               </div>
             </motion.div>
           ))}
