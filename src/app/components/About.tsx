@@ -27,7 +27,7 @@ export default function About() {
   transition={{ delay: 0.2, duration: 0.6 }}
   className="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl leading-loose tracking-wide mb-10"
 >
-  I'm a <strong className="text-black">Junior Full-Stack Developer</strong> who loves building stuff for the web.{" "}
+  Im a <strong className="text-black">Junior Full-Stack Developer</strong> who loves building stuff for the web.{" "}
   My go-to stack is <strong className="text-black">Next.js</strong> and{" "}
   <strong className="text-black">Tailwind CSS</strong> on the frontend,{" "}
   <strong className="text-black">Node.js</strong> for backend logic, and{" "}
