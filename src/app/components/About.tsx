@@ -11,7 +11,7 @@ export default function About() {
     <section
       id="About"
       className="py-20 px-4 text-center bg-gray-100 text-gray-700"
-    >
+    > 
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}

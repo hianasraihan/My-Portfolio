@@ -11,7 +11,7 @@ const skills = [
   { name: "JavaScript", image: "/js.jpg" },
   { name: "TypeScript", image: "/ts.jpg" },
   { name: "Html", image: "/html.jpg" },
-  { name: "Css", image: "/css.jpg" },
+  { name: "Supabase", image: "/supabase.jpg" },
   { name: "Github", image: "/github.jpg" },
   { name: "Python", image: "/python.jpg" },
   { name: "Node.js", image: "/nodejs.jpg" },
