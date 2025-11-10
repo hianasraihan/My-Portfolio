@@ -11,7 +11,7 @@ export default function About() {
     <section
       id="About"
       className="py-20 px-4 text-center bg-gray-100 text-gray-700"
-    > 
+    >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,21 +22,26 @@ export default function About() {
       </motion.h2>
 
       <motion.p
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  transition={{ delay: 0.2, duration: 0.6 }}
-  className="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl leading-loose tracking-wide mb-10"
->
-  Im a <strong className="text-black">Junior Full-Stack Developer</strong> who loves building stuff for the web.{" "}
-  My go-to stack is <strong className="text-black">Next.js</strong> and{" "}
-  <strong className="text-black">Tailwind CSS</strong> on the frontend,{" "}
-  <strong className="text-black">Node.js</strong> for backend logic, and{" "}
-  <strong className="text-black">Supabase</strong> for handling databases, auth, and storage — 
-  all wrapped up with <strong className="text-black">TypeScript</strong> to keep my code neat and less error-prone.
-  <br /><br />
-  I learn by making — and making it better for the people who use it.
-</motion.p>
-
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl leading-loose tracking-wide mb-10"
+      >
+        Im a <strong className="text-black">Video Editor</strong> and{" "}
+        <strong className="text-black">Junior Full-Stack Developer</strong> who loves creating things that connect —
+        whether its a story told through video or an experience built for the web.{" "}
+        As a <strong className="text-black">CapCut expert</strong>, I focus on smooth transitions,
+        clean pacing, and storytelling that keeps viewers engaged.{" "}
+        On the tech side, I build responsive and dynamic web apps using{" "}
+        <strong className="text-black">Next.js</strong>,{" "}
+        <strong className="text-black">Tailwind CSS</strong>,{" "}
+        <strong className="text-black">Node.js</strong>, and{" "}
+        <strong className="text-black">Supabase</strong>, powered by{" "}
+        <strong className="text-black">TypeScript</strong> for clean and reliable code.
+        <br /><br />
+        Im driven by the process of learning, creating, and making each project better —
+        visually, technically, and for the people who use it.
+      </motion.p>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -45,7 +50,7 @@ export default function About() {
         className="flex justify-center gap-4 flex-wrap"
       >
         <a
-          href="/Anas Raihan Aprianto - Resume.pdf"
+          href="/Anas Raihan Aprianto - Resume1.pdf"
           download
           className="inline-flex items-center gap-2 px-6 py-3 bg-black hover:bg-gray-800 text-white font-semibold rounded-full shadow-lg transition-all text-sm sm:text-base"
         >
@@ -88,7 +93,7 @@ export default function About() {
 
               <div className="w-full aspect-[9/16] relative rounded-md overflow-hidden">
                 <Image
-                  src="/anas-raihan-aprianto-Resume.png"
+                  src="/resume.png"
                   alt="CV Preview"
                   fill
                   className="object-contain"

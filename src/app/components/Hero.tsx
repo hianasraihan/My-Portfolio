@@ -26,14 +26,14 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 max-w-2xl leading-relaxed mb-8">
-          Full Stack Developer based in Jakarta, Indonesia 
+          Video Editor & Full Stack Developer 
         </p>
 
         {/* Tombol Aksi */}
         <div className="flex flex-col sm:flex-row gap-4">
           <button
             onClick={() => scrollToSection("Projects")}
-            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full shadow-lg text-base font-semibold transition shadow-md"
+            className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full text-base font-semibold transition shadow-md"
           >
             View Projects
           </button>

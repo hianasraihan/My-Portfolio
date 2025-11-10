@@ -16,6 +16,10 @@ const skills = [
   { name: "Python", image: "/python.jpg" },
   { name: "Node.js", image: "/nodejs.jpg" },
   { name: "Vercel", image: "/vercel.jpg" },
+  { name: "Adobe Premiere Pro", image: "/adobe.png" },
+  { name: "VN", image: "/vn.jpg" },
+  { name: "CapCut", image: "/vercel.jpg" },
+  { name: "Alight Motion", image: "/alight.png" },
   
 ];
 

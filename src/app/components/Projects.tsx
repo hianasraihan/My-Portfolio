@@ -32,6 +32,42 @@ const projects = [
     image: "/projects5.png",
     url: "https://www.still-travel.com/",
   },
+  {
+    title: "Arsakha Jannah Wisata",
+    description: "Shot and edited original videos for projects.",
+    image: "/arsakha.png",
+    url: "https://www.instagram.com/reel/C-PRIniS_7B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    title: "Arsakha Jannah Wisata",
+    description: "Shot and edited original videos for projects.",
+    image: "/arsakha.png",
+    url: "https://www.instagram.com/reel/C8_72yjysX9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    title: "Arsakha Jannah Wisata",
+    description: "Shot and edited original videos for projects.",
+    image: "/arsakha.png",
+    url: "https://www.instagram.com/reel/C9CQO0zyu6z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    title: "Arsakha Jannah Wisata",
+    description: "Shot and edited original videos for projects.",
+    image: "/arsakha.png",
+    url: "https://www.instagram.com/reel/C86k93kyTH4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    title: "Arsakha Jannah Wisata",
+    description: "Shot and edited original videos for projects.",
+    image: "/arsakha.png",
+    url: "https://www.instagram.com/reel/C-NCGtuSKIw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    title: "Ancak Studios",
+    description: "Captured and edited videos to match each project creative vision.",
+    image: "/ancak.jpg",
+    url: "https://www.instagram.com/p/Cn3oZtLPN8b/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
 ];
 
 export default function Projects() {
